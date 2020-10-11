@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>niss.TranslatePlugin</id>
+    <name>Translater</name>
+    <vendor url="https://github.com/NissCR">Niss</vendor>
+
+    <description><![CDATA[
+    Translate selected text in editor. Supports data in cameCase.
+    Use ['Ctrl' + '\'] + ['Ctrl' + 'T'] to translate selected text.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <action id="TranslateAction" class="niss.TranslateAction" text="Translate Action"
+                description="Translate selected text">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl BACK_SLASH" second-keystroke="ctrl T"/>
+        </action>
+    </actions>
+</idea-plugin>
